@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Popular Five</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="bg-dark items-start flex">
+        <section class="container border-b-2 mx-auto pl-15px bg-zinc-700 dark:text-white text-center w-full h-96">
+            <div>
+                <p class="text-7xl italic text-orange-400 pt-8">Select Popular Five</p>
+                <p class="pt-5">Cricket is my favorite sport. Mashrafe Bin Mortaza is my favorite player. <br> As long
+                    as he was in the team, the Bangladesh cricket team was one of them. <br> Apart from this, Rubel
+                    Hossain, Mostafizur Rahman and Shakib Al Hasan, Tamim Iqbal and Shahriar Nafis are <br> among the
+                    batting players. Love all the rest who were and are.</p>
+            </div>
+            <div class="w-36 h-48">
+                <img src="images/mash 3.png" alt="">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="container mx-auto bg-zinc-700 text-white pt-8">
+            <div class=" p-4 grid grid-cols-4 gap-4 text-center">
+                <div class="bg-black">
+                    <img src="images/mash 5.jpg" alt="">
+                    <h3 class="text-3xl font-semibold">Mashrafi Bin Mortaza</h3>
+                   
+                    <button id="btn-select-mash"
+                        class="font-semibold text-xl pt-2 py-2 px-9 rounded-xl bg-orange-400 hover:bg-gray-400">Select</button>
+                </div>
+                <div class="bg-black">
+                    <img src="images/mushi.jpg" alt="">
+                    <h3 class="text-3xl font-semibold">Mushfiqur Rahim</h3>
+                    <button
+                        class="font-semibold text-xl pt-2 py-2 px-9 rounded-xl bg-orange-400 hover:bg-gray-400">Select</button>
+                </div>
+                <div class="bg-black">
+                    <img src="images/sakib 1.jpg" alt="">
+                    <h3 class="text-3xl font-semibold">Sakib Al Hasan</h3>
+                    <button
+                        class="font-semibold text-xl pt-2 py-2 px-9 rounded-xl bg-orange-400 hover:bg-gray-400">Select</button>
+                </div>
+                <div class="bg-black">
+                    <h3 class="text-center text-3xl font-semibold pt-9">Selected - V</h3>
+                    <ul class="text-start pt-8 pl-5 text-2xl font-semibold">
+                        <li class="pt-3">1. <span id="btn-mash" class="pl-4"> Mashrafi</span></li>
+                        <li class="pt-3">2. <span class="pl-4"> Mushfiq</span></li>
+                        <li class="pt-3">3. <span class="pl-4"> Sakib</span></li>
+                        <li class="pt-3">4. <span class="pl-4"> Taskin</span></li>
+                        <li class="pt-3">5. <span class="pl-4"> Rubel</span></li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto bg-zinc-700 text-white pt-8">
+            <div class=" p-4 grid grid-cols-4 gap-4 text-center">
+                <div class="bg-black">
+                    <img src="images/taskin 1.jpg" alt="">
+                    <h3 class="text-3xl font-semibold">Taskin Ahmed</h3>
+                    <button
+                        class="font-semibold text-xl pt-2 py-2 px-9 rounded-xl bg-orange-400 hover:bg-gray-400">Select</button>
+                </div>
+                <div class="bg-black">
+                    <img src="images/rubel 1.jpg" alt="">
+                    <h3 class="text-3xl font-semibold">Rubel Hossain</h3>
+                    <button
+                        class="font-semibold text-xl pt-2 py-2 px-9 rounded-xl bg-orange-400 hover:bg-gray-400">Select</button>
+                </div>
+                <div class="bg-black">
+                    <img src="images/musta 1.jpg" alt="">
+                    <h3 class="text-3xl font-semibold">Mustafizur Rahman</h3>
+                    <button
+                        class="font-semibold text-xl pt-2 py-2 px-9 rounded-xl bg-orange-400 hover:bg-gray-400">Select</button>
+                </div>
+                <div class="bg-black">
+                    <h3 class="text-center text-3xl font-semibold pt-7">Budget</h3>
+                    <div class="flex gap-16 pt-6">
+                        <h4 class="pl-5">Per-player</h4>
+                        <button class="px-7 py-2 border-2">1000</button>
+                    </div>
+                    <div class="flex pt-3 justify-center">
+                        <button class="px-16 py-2 bg-sky-500 hover:bg-sky-700">Calculate</button>
+                    </div>
+                    <div class="flex gap-16 pt-4">
+                        <h4 class="pl-5">Player Expenses</h4>
+                        <h4>$ <span>5000</span></h4>
+                    </div>
+                    <div class="flex gap-16 pt-4">
+                        <h4 class="pl-5">Manager</h4>
+                        <button class="px-5 py-2 border-2">2000</button>
+                    </div>
+                    <div class="flex gap-16 pt-4">
+                        <h4 class="pl-5">Coach</h4>
+                        <button class="px-5 py-2 border-2">5000</button>
+                    </div>
+                    <div class="flex pt-3 justify-center">
+                        <button class="px-16 py-2 bg-sky-500 hover:bg-sky-700">Calculate Total</button>
+                    </div>
+                    <div class="flex gap-36 pt-4">
+                        <h4 class="pl-5">Total</h4>
+                        <h4 class="text-orange-400">$ <span id="amount-total">11000</span></h4>
+                    </div>
+                </div>
+
+        </section>
+        <footer class="bg-dark items-start flex">
+            <section class="container border-t-4 mx-auto pl-15px bg-zinc-700 dark:text-white text-center w-full h-48">
+
+                <p class="pt-12">Copyright @ 2022 All Rights Reserved.</p>
+            </section>
+        </footer>
+
+    </main>
+    <script src="js/select.js"></script>
+</body>
+
+</html>
